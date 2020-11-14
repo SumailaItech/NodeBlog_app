@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+    
+    
+    <div class="form-div">
+        <h1><%=title %></h1><hr>
+        <form action="/posts/add" method="POST" class="post-form">
+          <div class="title">
+            <label for="">Title</label>
+            <input type="text" name="title">
+          </div>
+    
+          <div class="author">
+            <label for="">Author</label>
+            <input type="text" name="author">
+          </div>
+    
+          <div class="body">
+            <label for="">Post Body</label>
+            <textarea name="body" id="" cols="10" rows="4"></textarea>
+          </div>
+    
+          <button type="submit">Add Post</button>
+        </form>
+    </div>
+
+<%- include('footer'); -%>

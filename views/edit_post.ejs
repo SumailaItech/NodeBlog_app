@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+    
+    
+    <div class="form-div">
+        <h1>Editing Post Form</h1><hr>
+        <form action="/posts/edit/<%=post._id%>" method="POST" class="post-form">
+          <div class="title">
+            <label for="">Title</label>
+            <input type="text" name="title" value="<%=post.title%>">
+          </div>
+    
+          <div class="author">
+            <label for="">Author</label>
+            <input type="text" name="author" value="<%=post.author%>"> 
+          </div>
+    
+          <div class="body">
+            <label for="">Post Body</label>
+            <textarea name="body" id="" cols="10" rows="4"><%=post.body%></textarea>
+          </div>
+    
+          <button type="submit">Add Post</button>
+        </form>
+    </div>
+
+<%- include('footer'); -%>

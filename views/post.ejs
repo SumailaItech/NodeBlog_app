@@ -1,0 +1,12 @@
+<%- include('header'); -%>
+<section class="hero-section">
+    <h1><%=post.title %></h1>
+</section>
+    <div class="blog-body">
+        <a href="/post/edit/<%=post._id%>" class="blog-action btn-edit">Edit</a>
+
+        <a id="delete-btn" href="#" class="blog-action btn-delete" data-id="<%=post._id%>">Delete</a><hr>
+        <p><%=post.body %></p>
+    </div>
+  
+<%- include('footer'); -%>
